@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu Tienda Online</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="novedades.css">
+  
+  <script src="novedades.js"></script>
+  <script src="detalle_novedades.js"></script>
+
+  
+
+
+</head>
+<body>
+  
+  <header>
+    <div class="logo-container">
+        <a href="index.html"><img src="1.png" alt="Logo de la tienda"></a>
+  
+</div>
+    <div class="search-wrapper">
+      <input type="text" placeholder="Buscar" class="search-input">
+      <button type="submit" class="search-button" >Buscar</button>
+</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="ofertas.html">OFERTAS</a>  </li>
+      <li><a href="novedades.html">NOVEDADES</a></li>
+      
+     <li class="dropdown">
+      <a href="dibujo.html">DIBUJO</a>
+      <div class="dropdown-content">
+        <ul class="subcategories">
+          <li>
+            <a href="#">ARTE Y DISEÑO</a>
+            <ul class="elements">
+              <li><a href="#">PINCELES</a></li>
+              <li><a href="#">DIFUMINOS</a></li>
+              <li><a href="#">MARCADORES ACRÍLICOS</a></li>
+              <li><a href="#">SET DE DIBUJOS</a></li>
+              <li><a href="#">GALERIA DE ARTE VIRTUAL</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PINTURA</a>
+            <ul class="elements">
+              <li><a href="#">ACRÍLICOS</a></li>
+              <li><a href="#">ÓLEOS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">SOPORTES</a>
+            <ul class="elements">
+              <li><a href="#">CABALLETES</a></li>
+              <li><a href="#">LIENZOS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </li>
+     
+      <li class="dropdown">
+        <a href="papeleria.html">PAPELERÍA</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">AGENDAS</a>
+              <ul class="elements">
+                <li><a href="#">CUADERNOS</a></li>
+                <li><a href="#">CUADERNO DE DIBUJOS</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PAPELES</a>
+              <ul class="elements">
+                <li><a href="#">PAPEL PARA ACUARELAS</a></li>
+                <li><a href="#">PAPEL PARA DIBUJOS</a></li>
+                <li><a href="#">PAPEL PARA MARCADOR</a></li>
+                <li><a href="#">PAPEL PARA PASTELES</a></li>
+                <li><a href="#">PAPEL NEGRO</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="dropdown">
+        <a href="escritura.html">ESCRITURA</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">LÁPICES</a>
+              <ul class="elements">
+                <li><a href="#">LÁPICES DE COLORES</a></li>
+                <li><a href="#">PORTAMINAS</a></li>
+                <li><a href="#">MINAS DE GRAFITO</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">BOLÍGRAFOS</a>
+              <ul class="elements">
+                <li><a href="#">BOLÍGRAFOS ESPECIALES</a></li>
+                <li><a href="#">BOLÍGRAFOS GEL</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PLUMAS</a>
+              <ul class="elements">
+                <li><a href="#">PLUMA DE INMERSIÓN</a></li>
+                <li><a href="#">PLUMA ESTILOGRÁFICA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="juego de mesas.html">JUEGO DE MESAS</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">ROMPECABEZAS</a>
+              <a href="#">JUEGOS DE ESTRATEGIA TÁCTICA</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="dropdown">
+        <a href="accesorios.html">ACCESORIOS</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">ARCILLAS PARA MODELAR SECADO DE AIRE</a>
+              <a href="#">COMPÁS</a>
+              <a href="#">BORRADOR ELÉCTRICO</a>
+              <a href="#">ESCUADRAS</a>
+              <a href="#">GRAFITO EN POLVO</a>
+              <a href="#">MANIQUÍ ARTICULABLE</a>
+              <a href="#">RODILLOSDE GOMA</a>
+              <a href="#">TAJADOR</a>
+              <a href="#">TIZAS DE PASTEL</a>
+
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="secondary-nav">
+    <div class="nav-links">
+      <a href="index.html"><img src="pngwing.com.png" alt="volver_atras" style="  width: 25px;"></a>
+      <a href="index.html">Inicio</a>
+      <span class="nav-divider">/</span>
+      <a href="novedades.html">Novedades</a>
+    </div>
+  </div>
+ 
+  <div class="filtro">
+    <div class="filters">
+      <div class="column">
+        <h3 style="margin-left: 80px;" >FILTROS</h3>
+        
+        <div class="filter-group">
+          <label for="min-price" style="margin-left: 7px;margin-top: 5px;font-weight: bold;" >Mínimo:</label>
+          <input type="number" style =" border-radius: 5px;" id="min-price" min="0" name="min-price" placeholder="Ingrese precio mínimo">
+        </div>
+        <div class="filter-group">
+          <label for="max-price" style="margin-left: 5px;margin-top: 5px;font-weight: bold;" >Máximo:</label>
+          <input type="number" style =" border-radius: 5px;" id="max-price" min="1000" name="max-price" placeholder="Ingrese precio máximo">
+        </div>
+        <!-- Aquí puedes agregar tus filtros -->       
+      <div class="filter-group">
+        <label for="disponibilidad" style="margin-left: 10px;margin-top: 15px;font-weight: bold;" >Solo productos disponibles &nbsp;&nbsp;&nbsp; </label>
+        <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="disponibilidad" name="disponibilidad">
+
+      </div> 
+      <!--botn de filtro para precio y disponibilidad-->      
+       <button onclick="aplicarFiltros()"style="margin-left: 80px; margin-top: 10px; border-radius: 5px; font-size:15px;  width: 100px;font-weight: bold; padding: 5px 15px;background-color: #fff; color: #000; border: 1px solid #000;" onmouseover="this.style.backgroundColor='#DFDCDC';" onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000';" >Filtrar</button>
+       
+       <h3 style="margin-left:60px;" >CATEGORIAS</h3>
+       <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 90px;font-weight: bold;" >Dibujo&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 10px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 85px;font-weight: bold;" >Pintura&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 77px;font-weight: bold;" >Soportes&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 72px;font-weight: bold;" >Papelería&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 72px;font-weight: bold;" >Escritura&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 32px;font-weight: bold;" >Juego de mesas&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      <div class="filter-group">
+        <div>
+          <label for="categoria1" style="margin-left: 63px;font-weight: bold;" >Accesorios&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="categoria1" name="categoria" value="categoria1">
+        </div>
+       
+      </div>
+      
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="column">
+        <!-- Aquí puedes agregar el contenido principal -->
+         <!-- otro producto -->
+              <!-- otro producto -->
+              <div class="product" data-price="225" data-disponible="disponible" >
+                <img src="imagenes/accesorios/maniqui01a.png" alt="Producto 1">
+                <div class="ver-mas">
+                  <a href="#">Ver más</a>
+                </div>
+                <h4>Maniquí Articulable Gigante de Madera (50 cm)
+                </h4>
+                <p class="price">
+                  <span class="discounted-price"> Bs.225,00</span>
+                </p>
+              </div>       
+          <!-- otro producto -->
+                    <!-- otro producto -->
+        <div class="product" data-price="20" data-disponible="Agotado" >
+          <img src="imagenes/accesorios/rodillo01a.png" alt="Producto 1">
+          <div class="ver-mas">
+            <a href="#">Ver más</a>
+          </div>
+          <h4>Rodillo de Goma para Grabado F325
+          </h4>
+          <p class="price">
+            <span class="discounted-price">Bs.20,00 Agotado</span>
+          </p>
+        </div>    
+        <div class="product"data-price="275" data-disponible="disponible">
+          <img src="imagenes/arte/pincel0leo01a.png" alt="Producto 1">
+          <div class="ver-mas">
+            <a href="#">Ver más</a>
+          </div>
+          <h4>Set de 15 Pinceles de Alta Calidad con Estuche Tipo Caballete Mont Marte
+          </h4>
+          <p class="price">
+            <span class="discounted-price">Bs.275,00 
+            </span>
+          </p>
+        </div>
+                <!-- otro producto -->
+      <div class="product" data-price="130" data-disponible="disponible">
+          <img src="imagenes/arte/pincelAcu01a.png" alt="Producto 1">
+          <div class="ver-mas">
+            <a href="#">Ver más</a>
+          </div>
+          <h4>Set de 10 Pinceles Signature para Detalles Finos Mont Marte
+          </h4>
+          <p class="price">
+            <span class="discounted-price">Bs.130,00 
+            </span>
+          </p>
+        </div>       
+        
+                <!-- otro producto -->
+                <div class="product" data-price="77" data-disponible="agotado" >
+                  <img src="imagenes/boligrafos/boligrafo02a.png" alt="Producto 1">
+                  <div class="ver-mas">
+                    <a href="#">Ver más</a>
+                  </div>
+                  <h4>Set de 4 Bolígrafos Inkjoy Gel Retráctiles 0.7mm Paper Mate</h4>
+                  <p class="price">
+                    <span class="discounted-price">Bs.77,00  Agotado</span>
+                  </p>
+                </div>       
+              <!-- otro producto -->
+              <div class="product" data-price="625" data-disponible="disponible">
+                  <img src="imagenes/boligrafos/boligrafo03a.png" alt="Producto 1">
+                  <div class="ver-mas">
+                    <a href="#">Ver más</a>
+                  </div>
+                  <h4>Bolígrafo Sonnet BP Violet CT Parker
+                  </h4>
+                  <p class="price">
+                      <span class="original-price">Bs.650,00</span><br>
+                      <span class="discounted-price">Bs.625,00</span>
+                  </p>
+                </div>
+                        <!-- otro producto -->
+              <div class="product" data-price="262" data-disponible="disponible">
+                  <img src="imagenes/boligrafos/boligrafo04a.png" alt="Producto 1">
+                  <div class="ver-mas">
+                    <a href="#">Ver más</a>
+                  </div>
+                  <h4>Set de 16 Bolígrafos Inkjoy Gel Retráctiles 0.7mm Paper Mate
+                  </h4>
+                  <p class="price">
+                    <span class="discounted-price">Bs.262.00</span>
+                  </p>
+                </div>     
+
+                <div class="product" data-price="" data-disponible="Agotado" >
+                  <img src="imagenes/juegos/juegoMesa02a.png" alt="Producto 1">
+                  <div class="ver-mas">
+                    <a href="#">Ver más</a>
+                  </div>
+                  <h4>Arqueojugando Gran T-Rex – Ciencia y Juego Clementoni
+                  </h4>
+                  <p class="price">
+                    <span class="original-price">Bs.225,00 
+                    </span><br>
+                    <span class="discounted-price"> Bs.200,00</span>
+                  </p>
+                </div>   
+        
+                <div class="product" data-price="" data-disponible="Agotado" >
+                  <img src="imagenes/juegos/juegoMesa03a.png" alt="Producto 1">
+                  <div class="ver-mas">
+                    <a href="#">Ver más</a>
+                  </div>
+                  <h4>Juego de Mesa – Código Secreto – Devir
+                  </h4>
+                  <p class="price">
+                    <span class="discounted-price"> Bs.210,00 Agotado</span>
+                  </p>
+                </div>       
+              <!-- otro producto -->
+                <!-- otro producto -->
+                <div class="product" data-price="" data-disponible="disponible" >
+                  <img src="imagenes/juegos/juegoMesa04a.png" alt="Producto 1">
+                  <div class="ver-mas">
+                    <a href="#">Ver más</a>
+                  </div>
+                  <h4>Juego de Mesa – Exit – La Tumba del Faraon (Nivel Experto) – Devir
+                  </h4>
+                  <p class="price">
+                    <span class="original-price">Bs.210,00 
+                    </span><br>
+                    <span class="discounted-price"> Bs.185,00 
+                    </span>
+                  </p>
+                </div>       
+              <!-- otro producto -->
+               <!-- otro producto -->
+               <div class="product" data-price="120" data-disponible="Agotado" >
+                <img src="imagenes/juegos/juegoMesa05a.png" alt="Producto 1">
+                <div class="ver-mas">
+                  <a href="#">Ver más</a>
+                </div>
+                <h4>Rompecabezas Space – Astronauta – Space Cowboy – 250 piezas – Clementoni
+                </h4>
+                <p class="price">
+                  <span class="discounted-price"> Bs.120,00 Agotado</span>
+                </p>
+              </div>       
+            <!-- otro producto -->
+              <!-- otro producto -->
+              <div class="product" data-price="350" data-disponible="disponible" >
+                <img src="imagenes/juegos/rompecabeza01a.png" alt="Producto 1">
+                <div class="ver-mas">
+                  <a href="#">Ver más</a>
+                </div>
+                <h4>Rompecabezas – Coliseo Romano – 3000 piezas – Clementoni
+                </h4>
+                <p class="price">
+                  <span class="discounted-price">Bs.350,00 
+                  </span>
+                </p>
+              </div>       
+            <!-- otro producto -->
+             <!-- otro producto -->
+             <div class="product" data-price="185" data-disponible="disponible" >
+              <img src="imagenes/juegos/rompecabeza02a.png" alt="Producto 1">
+              <div class="ver-mas">
+                <a href="#">Ver más</a>
+              </div>
+              <h4> Rompecabezas – El Tablero de Café – 1000 piezas – Clementoni
+              </h4>
+              <p class="price">
+                <span class="discounted-price"> Bs.185,00 
+                </span>
+              </p>
+            </div> 
+              
+          
+        <!-- Aquí termina contenido -->
+      </div>
+    </div>
+    
+  </div>
+
+
+  <footer>
+    <!-- Aquí puedes agregar el contenido del pie de página -->
+  </footer>
+
+</body>
+</html>

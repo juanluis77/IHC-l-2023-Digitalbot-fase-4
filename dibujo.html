@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu Tienda Online</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="novedades.css">
+  
+  <script src="novedades.js"></script>
+  <script src="detalle_novedades.js"></script>
+
+  
+
+
+</head>
+<body>
+  
+  <header>
+    <div class="logo-container">
+        <a href="index.html"><img src="1.png" alt="Logo de la tienda"></a>
+  
+</div>
+    <div class="search-wrapper">
+      <input type="text" placeholder="Buscar" class="search-input">
+      <button type="submit" class="search-button" >Buscar</button>
+</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="ofertas.html">OFERTAS</a>  </li>
+      <li><a href="novedades.html">NOVEDADES</a></li>
+      
+     <li class="dropdown">
+      <a href="dibujo.html">DIBUJO</a>
+      <div class="dropdown-content">
+        <ul class="subcategories">
+          <li>
+            <a href="#">ARTE Y DISEÑO</a>
+            <ul class="elements">
+              <li><a href="#">PINCELES</a></li>
+              <li><a href="#">DIFUMINOS</a></li>
+              <li><a href="#">MARCADORES ACRÍLICOS</a></li>
+              <li><a href="#">SET DE DIBUJOS</a></li>
+              <li><a href="#">GALERIA DE ARTE VIRTUAL</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PINTURA</a>
+            <ul class="elements">
+              <li><a href="#">ACRÍLICOS</a></li>
+              <li><a href="#">ÓLEOS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">SOPORTES</a>
+            <ul class="elements">
+              <li><a href="caballetes.html">CABALLETES</a></li>
+              <li><a href="#">LIENZOS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </li>
+     
+      <li class="dropdown">
+        <a href="papeleria.html">PAPELERÍA</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">AGENDAS</a>
+              <ul class="elements">
+                <li><a href="#">CUADERNOS</a></li>
+                <li><a href="#">CUADERNO DE DIBUJOS</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PAPELES</a>
+              <ul class="elements">
+                <li><a href="#">PAPEL PARA ACUARELAS</a></li>
+                <li><a href="#">PAPEL PARA DIBUJOS</a></li>
+                <li><a href="#">PAPEL PARA MARCADOR</a></li>
+                <li><a href="#">PAPEL PARA PASTELES</a></li>
+                <li><a href="#">PAPEL NEGRO</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="dropdown">
+        <a href="escritura.html">ESCRITURA</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">LÁPICES</a>
+              <ul class="elements">
+                <li><a href="#">LÁPICES DE COLORES</a></li>
+                <li><a href="#">PORTAMINAS</a></li>
+                <li><a href="#">MINAS DE GRAFITO</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">BOLÍGRAFOS</a>
+              <ul class="elements">
+                <li><a href="#">BOLÍGRAFOS ESPECIALES</a></li>
+                <li><a href="#">BOLÍGRAFOS GEL</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PLUMAS</a>
+              <ul class="elements">
+                <li><a href="#">PLUMA DE INMERSIÓN</a></li>
+                <li><a href="#">PLUMA ESTILOGRÁFICA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="juego de mesas.html">JUEGO DE MESAS</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">ROMPECABEZAS</a>
+              <a href="#">JUEGOS DE ESTRATEGIA TÁCTICA</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="dropdown">
+        <a href="accesorios.html">ACCESORIOS</a>
+        <div class="dropdown-content">
+          <ul class="subcategories">
+            <li>
+              <a href="#">ARCILLAS PARA MODELAR SECADO DE AIRE</a>
+              <a href="#">COMPÁS</a>
+              <a href="#">BORRADOR ELÉCTRICO</a>
+              <a href="#">ESCUADRAS</a>
+              <a href="#">GRAFITO EN POLVO</a>
+              <a href="#">MANIQUÍ ARTICULABLE</a>
+              <a href="#">RODILLOSDE GOMA</a>
+              <a href="#">TAJADOR</a>
+              <a href="#">TIZAS DE PASTEL</a>
+
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="secondary-nav">
+    <div class="nav-links">
+      <a href="index.html"><img src="pngwing.com.png" alt="volver_atras" style="  width: 25px;"></a>
+      <a href="index.html">Inicio</a>
+      <span class="nav-divider">/</span>
+      <a href="dibujo.html">Dibujo</a>
+    </div>
+  </div>
+ 
+  <div class="filtro">
+    <div class="filters">
+      <div class="column">
+        <h3 style="margin-left: 80px;" >FILTROS</h3>
+        
+        <div class="filter-group">
+          <label for="min-price" style="margin-left: 7px;margin-top: 5px;font-weight: bold;" >Mínimo:</label>
+          <input type="number" style =" border-radius: 5px;" id="min-price" min="0" name="min-price" placeholder="Ingrese precio mínimo">
+        </div>
+        <div class="filter-group">
+          <label for="max-price" style="margin-left: 5px;margin-top: 5px;font-weight: bold;" >Máximo:</label>
+          <input type="number" style =" border-radius: 5px;" id="max-price" min="1000" name="max-price" placeholder="Ingrese precio máximo">
+        </div>
+        <!-- Aquí puedes agregar tus filtros -->       
+      <div class="filter-group">
+        <label for="disponibilidad" style="margin-left: 10px;margin-top: 15px;font-weight: bold;" >Solo productos disponibles &nbsp;&nbsp;&nbsp; </label>
+        <input type="checkbox" style="transform: scale(1.8);margin-right: 10px;margin-top: 20px;" id="disponibilidad" name="disponibilidad">
+
+      </div> 
+      <!--botn de filtro para precio y disponibilidad-->      
+       <button onclick="aplicarFiltros()"style="margin-left: 80px; margin-top: 10px; border-radius: 5px; font-size:15px;  width: 100px;font-weight: bold; padding: 5px 15px;background-color: #fff; color: #000; border: 1px solid #000;" onmouseover="this.style.backgroundColor='#DFDCDC';" onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000';" >Filtrar</button>
+       
+       <h3 style="margin-left:60px;" >CATEGORÍA</h3>
+       <div class="categiasP">
+        <div class="links">
+          <a href="arte-y-diseno.html">Arte y diseño</a>
+          <a href="pinceles.html">Pinceles</a>
+          <a href="difuminos.html">Difuminos</a>
+          <a href="marcadores-acrilicos.html">Marcadores acrílicos</a>
+          <a href="set-de-dibujos.html">Set de dibujos</a>
+          <a href="galeria-de-arte-virtual.html">Galería de arte virtual</a>
+          <a href="pintura.html">Pintura</a>
+          <a href="acrilicos.html">Acrílicos</a>
+          <a href="oleos.html">Óleos</a>
+          <a href="soportes.html">Soportes</a>
+          <a href="caballetes.html">Caballetes</a>
+          <a href="lienzos.html">Lienzos</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="column">
+        <!-- Aquí puedes agregar el contenido principal -->
+        <div class="product" data-price="450" data-disponible="disponible"  >
+          <img src="imagenes/acrilicos/acrilico01a.png" alt="Producto 1">
+
+          <div class="ver-mas">
+            <a href="#">Ver más</a>
+          </div>
+          <h4>Set de 24 acrílicos profesionales en tubo Liquitex</h4>
+          <p class="price">
+            <span class="discounted-price">Bs.450,00</span>
+          </p>
+        </div>
+        <!-- otro producto -->
+        <div class="product" data-price="140" data-disponible="disponible" >
+            <img src="imagenes/acrilicos/acrilico01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set de 80 acrílicos Vivid Colours Signature Mont Marte
+            </h4>
+            <p class="price">
+              <span class="original-price">Bs.150</span><br>
+              <span class="discounted-price">Bs.140</span>
+            </p>
+          </div>       
+        <!-- otro producto -->
+        <div class="product"  data-price="100" data-disponible="disponible">
+            <img src="imagenes/acrilicos/acrilico03a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set 12 Acrílico Studio Pebeo
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.100,00 
+              </span>
+            </p>
+          </div>
+                  <!-- otro producto -->
+        <div class="product" data-price="320" data-disponible="agotado">
+            <img src="imagenes/acrilicos/acrilico04a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set de 5 acrílicos profesionales de 118ml en tubo Liquitex
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.320,00  Agotado</span>
+            </p>
+          </div>       
+        <!-- otro producto -->
+        <div class="product" data-price="" data-disponible="disponible">
+            <img src="imagenes/accesorios/difumino01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set de 7 Difuminos para Carbón y Pastel Mont Marte
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.27,00 
+              </span>
+            </p>
+          </div>
+                  <!-- otro producto -->
+        <div class="product" data-price="370" data-disponible="disponible">
+            <img src="imagenes/arte/dibujoSet01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set de Dibujo de 26 Piezas PITT Grafito Faber Castell Alemán
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.370,00 
+              </span>
+            </p>
+          </div>       
+        <!-- otro producto -->
+        <div class="product" data-price="22" data-disponible="disponible">
+            <img src="imagenes/arte/acriliMarc01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Marcador de pintura acrílica Pintor M de 1.4mm color Blanco Pilot
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.22,00 
+              </span>
+            </p>
+          </div>
+                  <!-- otro producto -->
+        <div class="product" data-price="126" data-disponible="disponible">
+            <img src="imagenes/arte/pincelAcril01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Estuche con 10 Pinceles de Fibra Taklon para Acrílicos Signature Mont Marte
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.126,00 
+              </span>
+            </p>
+          </div>       
+        <!-- otro producto -->
+        <div class="product"data-price="275" data-disponible="disponible">
+            <img src="imagenes/arte/pincel0leo01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set de 15 Pinceles de Alta Calidad con Estuche Tipo Caballete Mont Marte
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.275,00 
+              </span>
+            </p>
+          </div>
+                  <!-- otro producto -->
+        <div class="product" data-price="130" data-disponible="disponible">
+            <img src="imagenes/arte/pincelAcu01a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set de 10 Pinceles Signature para Detalles Finos Mont Marte
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.130,00 
+              </span>
+            </p>
+          </div>       
+        <!-- otro producto -->
+        <div class="product" data-price="20" data-disponible="disponible">
+            <img src="imagenes/arte/acriliMarc02a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Marcador de pintura acrílica Pintor F de 1 mm color Negro Pilot
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.20,00 
+              </span>
+            </p>
+          </div>
+                  <!-- otro producto -->
+        <div class="product" data-price="190" data-disponible="disponible">
+            <img src="imagenes/arte/pincelAcril02a.png" alt="Producto 1">
+            <div class="ver-mas">
+              <a href="#">Ver más</a>
+            </div>
+            <h4>Set Signature de 15 Pinceles de Detalles y Alta Precisión Mont Marte
+            </h4>
+            <p class="price">
+              <span class="discounted-price">Bs.190,00 
+              </span>
+            </p>
+          </div>     
+              
+          
+        <!-- Aquí termina contenido -->
+      </div>
+    </div>
+    
+  </div>
+
+
+  <footer>
+    <!-- Aquí puedes agregar el contenido del pie de página -->
+  </footer>
+
+</body>
+</html>

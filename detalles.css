@@ -1,0 +1,163 @@
+header {
+    background-color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+  }
+
+  .secondary-nav {
+    background-color: #333;
+    padding: 0px;
+    text-align: left;
+  }
+  
+  .secondary-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  
+  
+  
+  h4 {
+    font-size: 16px;
+    text-align: center;
+    color: #874545;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .filtro {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .filters {
+    flex-basis: 17.1%;
+    background-color: #f4c553;
+    text-align: center;
+    
+  }
+  
+  .contenido {
+    flex-basis: 82.8%;
+    background-color: #eedea1f8;
+  }
+  
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between; /* Agregamos esta línea */
+  }
+  
+  .product {
+    flex-basis: 23%;
+    padding: 20px;
+    box-sizing: border-box;
+   
+    margin-bottom: auto; /* Agregamos margen inferior */
+    display: flex;
+  flex-direction: column; /* Agrega esta línea para establecer un diseño de columna */
+  align-items: center; /* Agrega esta línea para centrar los elementos verticalmente */
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .filter-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+/*aqui va los detalles */
+.detalle {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.contenido-centrado {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  margin-left: 300px;
+}
+
+/* Resto de estilos CSS para las columnas y los elementos del producto */
+
+
+.imagen-columna {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  margin-top:-750px;
+  
+}
+
+.info-columna {
+  flex: 1 1 auto;
+  margin-top: -450px;
+  margin-right: 100px;
+  margin-left: 30px;
+
+}
+
+.producto-imagen {
+  width: 450px;
+  height: auto;
+}
+
+.producto-titulo {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.producto-precio {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.agregar-carrito {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f4c553;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.producto-descripcion {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.contenedor img {
+  width: 150px;
+  height: auto;
+}

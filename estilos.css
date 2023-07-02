@@ -1,0 +1,236 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content:first baseline;
+    align-items: flex-end;
+    padding: 5px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+header {
+    background-color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+  }
+  .logo-container img {
+    height: 100px;
+    width: auto;
+    margin-right: 50px;
+  }
+  .search-wrapper {
+    display: flex;
+    align-items: flex-start; /* Ajusta el alineamiento vertical aquí */
+    margin-bottom: 20px; /* Ajusta el espacio vertical aquí */
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #4b2020;
+    border-radius: 20px;
+    width: 450px;
+  }
+  
+  .search-button {
+    
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #f4c553;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #4b2020;
+  }
+
+  /* Estilos para la barra de navegación */
+  nav {
+    background: linear-gradient(to bottom, #e75656 0%, #d86262 50%, #e75656 100%);
+    padding: 2px;
+    border: 1px solid #4b2020;
+    
+    z-index: 1; /* Asegura que el menú esté por encima del carrusel */
+    margin-bottom: 115px;
+    top: 120px; /* Ajusta la distancia vertical desde la parte superior */
+    position: sticky;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 15px; /* Ajusta el margen derecho según tus preferencias */
+  
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #340000;
+    padding: 18px 30px;
+    transition: background-color 0.5s ease;
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+  }
+  
+  nav ul li a:hover {
+    background: linear-gradient(to bottom, #d76a6a 0%, #eca6a6 20%, #ff7272 100%);
+    
+    border-radius: 10px;
+    color: #000000;
+  }
+ 
+  .secondary-nav {
+    padding: 10px;
+    text-align: left; /* Alineación a la izquierda */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #984242;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+  }
+
+  .nav-divider {
+    color: #fff;
+    margin: 0 8px; /* Margen entre los elementos de división */
+  }
+  .nav-links a:hover {
+    color: #f4c553; /* Cambia el color del texto para resaltar */
+  }
+  /*estilos para los links de las categorias del lado de filtros*/
+  .categoriasP {
+    padding: 10px;
+    text-align: left; /* Alineación a la izquierda */
+    
+  }
+  .links {
+    text-align: left; /* Alineación a la izquierda */
+    margin-left: 60px;
+  }
+  .links a:hover {
+    color: #842b2b; /* Cambia el color del texto para resaltar */
+    text-shadow: 2px 2px 4px rgba(92, 7, 7, 0.049);
+
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #161212;
+    padding: 6.5px 12px;
+    font-weight: bold;
+    display: block; /* Muestra los enlaces como bloques para que se muestren verticalmente */
+  }
+  
+
+  /* Estilos para el menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to bottom, #fd6464 0%, #eca6a6 50%, #eca6a6 100%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 58px;
+  border-radius: 10px;
+  
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px 20px;/*aqui la distancia de los elementos del menu*/
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+.dropdown-content .subcategories {
+  display: flex;
+  
+  align-items: flex-start; /* Ajusta el alineamiento vertical aquí */
+}
+
+
+.dropdown-content .subcategories li {
+  margin-right: 0px;/*separado horizontal de los menus*/
+  text-align: center;
+  
+ 
+}
+
+.dropdown-content .elements {
+ 
+  
+  margin-top: 15px; /* Ajusta el espacio vertical entre las subcategorías y el contenido */
+  margin-left: 5px; /* Ajusta el espacio horizontal para acercar los elementos */
+  
+}
+
+
+.dropdown-content .subcategories li:hover .elements {
+  opacity: 1;
+  
+}
+.dropdown-content .subcategories li .elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ajusta el alineamiento vertical aquí */
+}
+
+.dropdown-content .subcategories li .elements li {
+  display: block;
+
+}
+  
+  /* Estilos para el contenido principal */
+
+
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+  }
+  body {
+   /* background-image: url('17973908.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  

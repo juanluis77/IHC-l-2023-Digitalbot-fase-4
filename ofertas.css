@@ -1,0 +1,106 @@
+header {
+    background-color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+  }
+
+  
+  
+  h4 {
+    font-size: 16px;
+    text-align: center;
+    color: #874545;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .filtro {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .filters {
+    flex-basis: 15%;
+    background-color: #f4c553;
+    text-align: center;
+    
+  }
+  
+  .contenido {
+    flex-basis: 83%;
+    background-color: #eedea1f8;
+  }
+  
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between; /* Agregamos esta línea */
+  }
+  
+  .product {
+    flex-basis: 23%;
+    padding: 20px;
+    box-sizing: border-box;
+   
+    margin-bottom: auto; /* Agregamos margen inferior */
+    display: flex;
+  flex-direction: column; /* Agrega esta línea para establecer un diseño de columna */
+  align-items: center; /* Agrega esta línea para centrar los elementos verticalmente */
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .filter-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .price {
+    font-size: px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .original-price {
+    color: #645e5e;
+    text-decoration: line-through;
+    margin-right: 5px;
+    font-weight: bold;
+
+  }
+  .discounted-price {
+    font-weight: bold;
+    color: #c00;
+    margin: auto;
+  }
+  .ver-mas {
+  margin-top: auto;
+  text-align: center;
+}
+.product:hover {
+    background-color: #f4c553;
+    background-color: rgba(243, 202, 69, 0.515); /* Fondo transparente oscuro al pasar el cursor */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.672); /* Sombra al pasar el cursor */
+  }
